@@ -1,5 +1,5 @@
 title: Kanta Sato
-description: The personal website of Kanta Sato, a pharmaceutical formulation researcher and doctoral researcher in informatics.
+description: The personal website of Kanta Sato, a pharmaceutical formulation researcher.
 lang: en
 url: "https://kanta-s.github.io"
 baseurl: ""
@@ -7,10 +7,13 @@ permalink: pretty
 
 profile:
   github: "https://github.com/kanta-s"
-  orcid:
+  orcid: "https://orcid.org/0009-0006-1069-4191"
+  linkedin: "https://jp.linkedin.com/in/kanta-sato-5b7b64196"
+  twitter:
   booklog:
 
 exclude:
   - README.md
+  - THIRD_PARTY_NOTICES.md
   - Gemfile
   - Gemfile.lock

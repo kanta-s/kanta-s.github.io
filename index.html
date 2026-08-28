@@ -1,38 +1,38 @@
 ---
 layout: default
 nav: home
-description: The personal website of Kanta Sato, a pharmaceutical formulation researcher and doctoral researcher in informatics.
+description: The personal website of Kanta Sato, a pharmaceutical formulation researcher.
 ---
 <main class="page-frame home-page">
-  <h1>Hello! <span aria-hidden="true">🌸</span></h1>
+  <h1>Hello! <span aria-hidden="true">🗻</span></h1>
 
   <section class="profile-intro" aria-labelledby="profile-name">
     <img class="portrait" src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="Profile photo placeholder for Kanta Sato">
     <h2 id="profile-name">Kanta Sato</h2>
-    <p class="name-japanese" lang="ja">佐藤 寛太</p>
-    <p class="role-line">Pharmaceutical formulation researcher · Doctoral researcher in informatics</p>
-    <p class="role-line role-line-ja" lang="ja">医薬品製剤研究者 · 情報学分野の博士課程</p>
+    <p class="name-japanese" lang="ja">佐藤 堪太</p>
+    <p class="role-line">Pharmaceutical formulation researcher</p>
+    <p class="role-line role-line-ja" lang="ja">医薬品製剤研究者</p>
 
     <nav class="profile-links" aria-label="Personal profiles">
-      <a href="{{ site.profile.github }}" rel="me"><b class="github-mark" aria-hidden="true">GH</b><span>GitHub</span></a>
-      {% if site.profile.orcid %}
-        <a href="{{ site.profile.orcid }}" rel="me"><b class="orcid-mark" aria-hidden="true">iD</b><span>ORCID</span></a>
+      <a href="{{ site.profile.github }}" rel="me" aria-label="GitHub profile"><img src="{{ '/assets/img/icons/github.svg' | relative_url }}" alt="" aria-hidden="true"><span>GitHub</span></a>
+      <a href="{{ site.profile.orcid }}" rel="me" aria-label="ORCID profile"><img src="{{ '/assets/img/icons/orcid.svg' | relative_url }}" alt="" aria-hidden="true"><span>ORCID</span></a>
+      <a href="{{ site.profile.linkedin }}" rel="me" aria-label="LinkedIn profile"><img src="{{ '/assets/img/icons/linkedin.svg' | relative_url }}" alt="" aria-hidden="true"><span>LinkedIn</span></a>
+      {% if site.profile.twitter %}
+        <a href="{{ site.profile.twitter }}" rel="me" aria-label="X formerly Twitter profile"><img src="{{ '/assets/img/icons/x.svg' | relative_url }}" alt="" aria-hidden="true"><span>X (Twitter)</span></a>
       {% else %}
-        <span class="profile-link is-pending" aria-label="ORCID URL pending"><b class="orcid-mark" aria-hidden="true">iD</b><span>ORCID</span><small>URL準備中</small></span>
+        <span class="profile-link is-pending" aria-label="X formerly Twitter URL pending"><img src="{{ '/assets/img/icons/x.svg' | relative_url }}" alt="" aria-hidden="true"><span>X (Twitter)</span><small>URL準備中</small></span>
       {% endif %}
       {% if site.profile.booklog %}
-        <a href="{{ site.profile.booklog }}" rel="me"><b class="book-mark" aria-hidden="true">B</b><span>Booklog</span></a>
+        <a href="{{ site.profile.booklog }}" rel="me" aria-label="Booklog profile"><img src="{{ '/assets/img/icons/book-open.svg' | relative_url }}" alt="" aria-hidden="true"><span>Booklog</span></a>
       {% else %}
-        <span class="profile-link is-pending" aria-label="Booklog URL pending"><b class="book-mark" aria-hidden="true">B</b><span>Booklog</span><small>URL準備中</small></span>
+        <span class="profile-link is-pending" aria-label="Booklog URL pending"><img src="{{ '/assets/img/icons/book-open.svg' | relative_url }}" alt="" aria-hidden="true"><span>Booklog</span><small>URL準備中</small></span>
       {% endif %}
     </nav>
   </section>
 
   <section class="about-section" aria-labelledby="about-title">
     <h2 id="about-title">About</h2>
-    <p>I am interested in formulation and process science, machine learning with limited data, and reliable decision-making from experiments. I currently work in pharmaceutical research while pursuing doctoral research in informatics.</p>
-    <p lang="ja">製剤・プロセス科学、少数データにおける機械学習、実験からの信頼できる意思決定に関心があります。現在は製薬企業で研究に携わりながら、情報学分野の博士課程で研究しています。</p>
-    <p>Outside research, I keep a personal reading log on Booklog.</p>
-    <p lang="ja">研究以外では、ブクログに読書記録を残しています。</p>
+    <p>I am interested in formulation and process science, machine learning with limited data, and reliable decision-making from experiments. I currently work in pharmaceutical research.</p>
+    <p lang="ja">製剤・プロセス科学、少数データにおける機械学習、実験からの信頼できる意思決定に関心があります。現在は製薬企業で研究に携わっています。</p>
   </section>
 </main>
