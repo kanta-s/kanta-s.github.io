@@ -4,7 +4,7 @@ A simple bilingual personal profile for GitHub Pages. The site contains only `Ho
 
 ## Complete the personal links
 
-Edit `_config.yml` and add the full `twitter` and `booklog` URLs. Until then, both profiles are shown as `URL準備中` without dead links.
+Edit `_config.yml` and add the full `twitter` URL. Until then, the profile is shown as `URL準備中` without a dead link.
 
 The profile photo used on the home page is `assets/img/profile.jpeg`.
 
