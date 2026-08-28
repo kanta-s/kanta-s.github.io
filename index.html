@@ -1,55 +1,38 @@
 ---
 layout: default
 nav: home
-description: Kanta Sato — pharmaceutical formulation researcher working at the intersection of process science and machine learning.
+description: The personal website of Kanta Sato, a pharmaceutical formulation researcher and doctoral researcher in informatics.
 ---
 <main class="page-frame home-page">
-  <header class="intro-heading">
-    <p class="eyebrow">FORMULATION SCIENCE × MACHINE LEARNING</p>
-    <h1>Hello.<span aria-hidden="true" class="hello-mark">✦</span></h1>
-    <p class="jp-heading" lang="ja">はじめまして。</p>
-  </header>
+  <h1>Hello! <span aria-hidden="true">🌸</span></h1>
 
   <section class="profile-intro" aria-labelledby="profile-name">
     <img class="portrait" src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="Profile photo placeholder for Kanta Sato">
     <h2 id="profile-name">Kanta Sato</h2>
     <p class="name-japanese" lang="ja">佐藤 寛太</p>
     <p class="role-line">Pharmaceutical formulation researcher · Doctoral researcher in informatics</p>
-    <p class="role-line role-line-ja" lang="ja">医薬品製剤研究者 · 情報学分野の社会人博士課程</p>
+    <p class="role-line role-line-ja" lang="ja">医薬品製剤研究者 · 情報学分野の博士課程</p>
 
-    <nav class="profile-links" aria-label="External profiles">
+    <nav class="profile-links" aria-label="Personal profiles">
       <a href="{{ site.profile.github }}" rel="me"><b class="github-mark" aria-hidden="true">GH</b><span>GitHub</span></a>
-      <a href="{{ site.profile.orcid }}"><b class="orcid-mark" aria-hidden="true">iD</b><span>ORCID</span><small>URL pending</small></a>
-      <a href="{{ site.profile.booklog }}"><b class="book-mark" aria-hidden="true">B</b><span>Booklog</span><small>URL pending</small></a>
+      {% if site.profile.orcid %}
+        <a href="{{ site.profile.orcid }}" rel="me"><b class="orcid-mark" aria-hidden="true">iD</b><span>ORCID</span></a>
+      {% else %}
+        <span class="profile-link is-pending" aria-label="ORCID URL pending"><b class="orcid-mark" aria-hidden="true">iD</b><span>ORCID</span><small>URL準備中</small></span>
+      {% endif %}
+      {% if site.profile.booklog %}
+        <a href="{{ site.profile.booklog }}" rel="me"><b class="book-mark" aria-hidden="true">B</b><span>Booklog</span></a>
+      {% else %}
+        <span class="profile-link is-pending" aria-label="Booklog URL pending"><b class="book-mark" aria-hidden="true">B</b><span>Booklog</span><small>URL準備中</small></span>
+      {% endif %}
     </nav>
   </section>
 
-  <section class="content-section" aria-labelledby="about-title">
-    <div class="section-label"><span>01</span><h2 id="about-title">About</h2></div>
-    <div class="bilingual-copy">
-      <div lang="en">
-        <p>I work at the intersection of pharmaceutical formulation, process science, and machine learning. My goal is to turn limited experimental data into decisions that researchers can explain, test, and trust.</p>
-        <p>My research focuses on quality assurance in pharmaceutical manufacturing, including prediction, knowledge transfer across materials and processes, and certification of design spaces.</p>
-      </div>
-      <div class="japanese-copy" lang="ja">
-        <p>医薬品製剤、プロセス科学、機械学習が交わる領域で研究しています。限られた実験データを、研究者が説明・検証でき、信頼して使える判断へつなげることを目指しています。</p>
-        <p>医薬品製造の品質保証を主題とし、予測、材料・工程間の知識移転、デザインスペースの保証に取り組んでいます。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section" aria-labelledby="focus-title">
-    <div class="section-label"><span>02</span><h2 id="focus-title">Research focus</h2></div>
-    <ul class="focus-list">
-      <li><span>A</span><div><h3>Pharmaceutical process science</h3><p lang="ja">製剤工程の理解と品質保証</p></div></li>
-      <li><span>B</span><div><h3>Machine learning with limited data</h3><p lang="ja">少数データにおける機械学習</p></div></li>
-      <li><span>C</span><div><h3>Reliable prediction and certification</h3><p lang="ja">信頼できる予測と統計的保証</p></div></li>
-    </ul>
-  </section>
-
-  <section class="content-section" aria-labelledby="contact-title">
-    <div class="section-label"><span>03</span><h2 id="contact-title">Contact</h2></div>
-    <p>Contact details can be added here when the public address is ready.</p>
-    <p class="japanese-copy" lang="ja">公開用の連絡先が決まり次第、こちらへ追加できます。</p>
+  <section class="about-section" aria-labelledby="about-title">
+    <h2 id="about-title">About</h2>
+    <p>I am interested in formulation and process science, machine learning with limited data, and reliable decision-making from experiments. I currently work in pharmaceutical research while pursuing doctoral research in informatics.</p>
+    <p lang="ja">製剤・プロセス科学、少数データにおける機械学習、実験からの信頼できる意思決定に関心があります。現在は製薬企業で研究に携わりながら、情報学分野の博士課程で研究しています。</p>
+    <p>Outside research, I keep a personal reading log on Booklog.</p>
+    <p lang="ja">研究以外では、ブクログに読書記録を残しています。</p>
   </section>
 </main>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
-    <meta name="theme-color" content="#f7f5ef">
+    <meta name="theme-color" content="#ffffff">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -13,8 +13,8 @@
     <div class="site-shell">
       <header class="site-header">
         <div class="header-inner">
-          <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Kanta Sato home">
-            <span>KS</span><i aria-hidden="true"></i>
+          <a class="brand-mark" href="{{ '/' | relative_url }}" aria-label="Kanta Sato home">
+            <img src="{{ '/assets/img/favicon.svg' | relative_url }}" alt="">
           </a>
           <nav class="main-nav" aria-label="Main navigation">
             <a href="{{ '/' | relative_url }}"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Home</a>
@@ -27,8 +27,9 @@
 
       <footer class="site-footer">
         <div class="footer-inner">
-          <p>© {{ 'now' | date: '%Y' }} Kanta Sato</p>
-          <p lang="ja">English / 日本語</p>
+          <p>This is a personal website. All content and opinions are my own and do not represent my current or former employers or any other organization. This site does not advertise, promote, or recommend medicines, treatments, or medical services, and does not provide medical advice.</p>
+          <p lang="ja">本サイトは個人によるものです。掲載内容および見解は個人のものであり、現在または過去の勤務先、その他の組織を代表するものではありません。医薬品、治療法または医療サービスの広告・販売促進・推奨を目的とせず、医療上の助言も提供しません。</p>
+          <p class="copyright">© {{ 'now' | date: '%Y' }} Kanta Sato</p>
         </div>
       </footer>
     </div>
