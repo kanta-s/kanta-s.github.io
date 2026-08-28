@@ -1,0 +1,16 @@
+title: Kanta Sato
+description: Pharmaceutical formulation researcher working at the intersection of process science and machine learning.
+lang: en
+url: "https://kanta-s.github.io"
+baseurl: ""
+permalink: pretty
+
+profile:
+  github: "https://github.com/kanta-s"
+  orcid: "#add-orcid-url"
+  booklog: "#add-booklog-url"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
