@@ -28,7 +28,7 @@ description: The personal website of Kanta Sato, a pharmaceutical formulation re
         <span class="profile-link is-pending" aria-label="X formerly Twitter URL pending"><img src="{{ '/assets/img/icons/x.svg' | relative_url }}" alt="" aria-hidden="true"><span>X (Twitter)</span><small>URL準備中</small></span>
       {% endif %}
       {% if site.profile.booklog %}
-        <a href="{{ site.profile.booklog }}" rel="me" aria-label="Booklog profile"><img src="{{ '/assets/img/icons/book-open.svg' | relative_url }}" alt="" aria-hidden="true"><span>Booklog</span></a>
+        <a href="{{ site.profile.booklog }}" rel="me noopener" target="_blank" aria-label="Booklog profile"><img src="{{ '/assets/img/icons/book-open.svg' | relative_url }}" alt="" aria-hidden="true"><span>Booklog</span></a>
       {% else %}
         <span class="profile-link is-pending" aria-label="Booklog URL pending"><img src="{{ '/assets/img/icons/book-open.svg' | relative_url }}" alt="" aria-hidden="true"><span>Booklog</span><small>URL準備中</small></span>
       {% endif %}
