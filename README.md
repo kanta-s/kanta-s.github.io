@@ -1,6 +1,10 @@
 # Kanta Sato — GitHub Pages site
 
-A simple bilingual personal profile for GitHub Pages. The site contains only `Home` and `Resume`; it intentionally omits Publications, Blog, and Visualizations.
+A simple bilingual personal profile for GitHub Pages. The site contains `Home`, `Resume`, and `Blog`; it intentionally omits Publications and Visualizations.
+
+## Blog
+
+Blog posts are Markdown files in `_posts`. See [`BLOG_GUIDE.md`](BLOG_GUIDE.md) for secure publishing and editing from a smartphone.
 
 ## Complete the personal links
 
