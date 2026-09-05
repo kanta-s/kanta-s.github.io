@@ -6,12 +6,12 @@ baseurl: ""
 permalink: pretty
 
 profile:
-  github: "https://github.com/kanta-s?refresh=20260831-2"
-  orcid: "https://orcid.org/0009-0006-1069-4191?refresh=20260831-2"
-  google_scholar: "https://scholar.google.com/citations?user=eB7_rW0AAAAJ&refresh=20260904"
-  linkedin: "https://jp.linkedin.com/in/kanta-sato-5b7b64196?refresh=20260831-2"
+  github: "https://github.com/kanta-s"
+  orcid: "https://orcid.org/0009-0006-1069-4191"
+  google_scholar: "https://scholar.google.com/citations?user=eB7_rW0AAAAJ"
+  linkedin: "https://jp.linkedin.com/in/kanta-sato-5b7b64196"
   twitter:
-  booklog: "https://booklog.jp/users/kantasato?refresh=20260831-2"
+  booklog: "https://booklog.jp/users/kantasato"
 
 exclude:
   - README.md
