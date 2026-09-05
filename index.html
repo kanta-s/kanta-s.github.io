@@ -1,17 +1,21 @@
 ---
 layout: default
 nav: home
-description: The personal website of Kanta Sato, a pharmaceutical formulation researcher.
+description: Kanta Sato (佐藤 堪太) — pharmaceutical formulation research, process modeling, and machine learning with limited experimental data.
 ---
 <main class="page-frame home-page">
-  <h1>Hello! <span aria-hidden="true">🗻</span></h1>
-
   <section class="profile-intro" aria-labelledby="profile-name">
-    <img class="portrait" src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Portrait of Kanta Sato" width="1447" height="1087">
-    <h2 id="profile-name">Kanta Sato</h2>
-    <p class="name-japanese" lang="ja">佐藤 堪太</p>
-    <p class="role-line">Pharmaceutical formulation researcher</p>
-    <p class="role-line role-line-ja" lang="ja">医薬品製剤研究者</p>
+    <div class="profile-overview">
+      <div class="profile-copy">
+        <h1 id="profile-name">Kanta Sato <span aria-hidden="true">🗻</span></h1>
+        <p class="name-japanese" lang="ja">佐藤 堪太</p>
+        <p class="role-line">Pharmaceutical formulation researcher</p>
+        <p class="role-line role-line-ja" lang="ja">医薬品製剤研究者</p>
+        <p class="research-summary">I study how process models and machine learning can support decisions in pharmaceutical formulation and manufacturing when experimental data are limited.</p>
+        <p class="research-summary" lang="ja">限られた実験データから医薬品の処方や製造条件を検討するために、プロセスモデルと機械学習の活用を研究しています。</p>
+      </div>
+      <img class="portrait" src="{{ '/assets/img/profile.jpeg' | relative_url }}" alt="Portrait of Kanta Sato" width="1447" height="1087">
+    </div>
 
     <address class="profile-details" aria-label="Location and email">
       <p><img src="{{ '/assets/img/icons/map-pin.svg' | relative_url }}" alt="" aria-hidden="true"><span>Japan, Kanagawa</span></p>
@@ -39,7 +43,13 @@ description: The personal website of Kanta Sato, a pharmaceutical formulation re
 
   <section class="about-section" aria-labelledby="about-title">
     <h2 id="about-title">About</h2>
-    <p>My current interests center on pharmaceutical formulation research, including process modeling, machine learning with limited data, and reliable decision-making based on experimental results. I studied surface chemistry at Tokyo University of Science through 2018. I received a Ph.D. in Informatics from Kyoto University in 2026. I am currently affiliated with the Formulation Technology Research Laboratory at Daiichi Sankyo Co., Ltd.</p>
-    <p lang="ja">現在は医薬品製剤研究を中心に、プロセスモデリング、少数データでの機械学習、実験結果に基づく信頼できる意思決定に関心があります。2018年まで東京理科大学で界面化学を学びました。2026年に京都大学で情報学の博士号を取得しました。現在は第一三共株式会社の製剤技術研究所に所属しています。</p>
+    <div class="about-language" lang="en">
+      <p>My current interests center on pharmaceutical formulation research, including process modeling, machine learning with limited data, and reliable decision-making based on experimental results.</p>
+      <p>I studied surface chemistry at Tokyo University of Science through 2018. I received a Ph.D. in Informatics from Kyoto University in 2026. I am currently affiliated with the Formulation Technology Research Laboratory at Daiichi Sankyo Co., Ltd.</p>
+    </div>
+    <div class="about-language" lang="ja">
+      <p lang="ja">現在は医薬品製剤研究を中心に、プロセスモデリング、少数データでの機械学習、実験結果に基づく信頼できる意思決定に関心があります。</p>
+      <p lang="ja">2018年まで東京理科大学で界面化学を学びました。2026年に京都大学で情報学の博士号を取得しました。現在は第一三共株式会社の製剤技術研究所に所属しています。</p>
+    </div>
   </section>
 </main>
